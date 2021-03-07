@@ -73,7 +73,9 @@ void Hangman::victory()
 void Hangman::on_A_clicked()
 {
     //draw 'a' in slots decided for a in hangman (nada)
-    right_Button_clicked();
+    //right_Button_clicked();
+    ui->A1AnswerBox->setText("A");
+    ui->A2AnswerBox->setText("A");
 }
 
 void Hangman::on_B_clicked()
@@ -103,12 +105,12 @@ void Hangman::on_F_clicked()
 
 void Hangman::on_G_clicked()
 {
-
+    ui->GAnswerBox->setText("G");
 }
 
 void Hangman::on_H_clicked()
 {
-
+    ui->HAnswerBox->setText("H");
 }
 
 void Hangman::on_I_clicked()
@@ -133,12 +135,13 @@ void Hangman::on_L_clicked()
 
 void Hangman::on_M_clicked()
 {
-
+    ui->MAnswerBox->setText("M");
 }
 
 void Hangman::on_N_clicked()
 {
-
+    ui->N1AnswerBox->setText("N");
+    ui->N2AnswerBox->setText("N");
 }
 
 void Hangman::on_O_clicked()

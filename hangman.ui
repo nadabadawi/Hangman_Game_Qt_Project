@@ -376,7 +376,7 @@
     </font>
    </property>
    <property name="text">
-    <string>H</string>
+    <string/>
    </property>
    <property name="frame">
     <bool>false</bool>
@@ -400,13 +400,13 @@
     </font>
    </property>
    <property name="text">
-    <string>A</string>
+    <string/>
    </property>
    <property name="frame">
     <bool>false</bool>
    </property>
    <property name="cursorPosition">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -427,7 +427,7 @@
     </font>
    </property>
    <property name="text">
-    <string>N</string>
+    <string/>
    </property>
    <property name="frame">
     <bool>false</bool>
@@ -454,7 +454,7 @@
     </font>
    </property>
    <property name="text">
-    <string>G</string>
+    <string/>
    </property>
    <property name="frame">
     <bool>false</bool>
@@ -478,7 +478,7 @@
     </font>
    </property>
    <property name="text">
-    <string>M</string>
+    <string/>
    </property>
    <property name="frame">
     <bool>false</bool>
@@ -502,7 +502,7 @@
     </font>
    </property>
    <property name="text">
-    <string>A</string>
+    <string/>
    </property>
    <property name="frame">
     <bool>false</bool>
@@ -526,7 +526,7 @@
     </font>
    </property>
    <property name="text">
-    <string>N</string>
+    <string/>
    </property>
    <property name="frame">
     <bool>false</bool>
