@@ -85,7 +85,7 @@ private slots:
     void on_Z_clicked();
 
 private:
-    Ui::hangman *ui;
+    Ui::Hangman *ui;
     int numMistakes;
     int numRightButtons;
     QGraphicsScene* scene;

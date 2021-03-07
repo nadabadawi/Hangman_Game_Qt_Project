@@ -7,7 +7,7 @@ Hangman::Hangman(QWidget *parent)
 {
     ui->setupUi(this);
     scene = new QGraphicsScene(this);
-    ui->gView->setScene(scene);
+    ui->graphicsView->setScene(scene);
 
 // draw stand for hangman to be initialized since opening game
 
