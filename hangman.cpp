@@ -10,6 +10,13 @@ Hangman::Hangman(QWidget *parent)
     ui->graphicsView->setScene(scene);
 
 // draw stand for hangman to be initialized since opening game
+    QPen Blackpen(Qt::white);
+    Blackpen.setWidth(5);
+    line = scene->addLine(-100,5,-100,150,Blackpen);//line el ta7t
+    line2 = scene->addLine(-100,175,-100,325,Blackpen);//line el fo2
+    line3 = scene->addLine(-175,340,-25,340,Blackpen);//stand ta7t
+    line4 = scene->addLine(-100,-10,-25,-10,Blackpen);//el bta3a el maska el 7abl
+    line5 = scene->addLine(-25,0,-25,25,Blackpen);//el 7abl
 
     numMistakes = 0;
     numRightButtons = 0;
@@ -74,7 +81,6 @@ void Hangman::on_A_clicked()
 {
     ui->A1AnswerBox->setText("A");
     ui->A2AnswerBox->setText("A");
-    right_Button_clicked();
     right_Button_clicked();
 }
 
@@ -145,7 +151,6 @@ void Hangman::on_N_clicked()
 {
     ui->N1AnswerBox->setText("N");
     ui->N2AnswerBox->setText("N");
-    right_Button_clicked();
     right_Button_clicked();
 }
 

@@ -22,6 +22,7 @@ class Hangman : public QWidget
 public:
     Hangman(QWidget *parent = nullptr);
     ~Hangman();
+    
 
 private slots:
     void wrong_Button_clicked();
@@ -88,7 +89,15 @@ private:
     Ui::Hangman *ui;
     int numMistakes;
     int numRightButtons;
+   
     QGraphicsScene* scene;
+    
+    QGraphicsLineItem* line;//line el ta7t
+    QGraphicsLineItem* line2;//line el fo2
+    QGraphicsLineItem* line3;//stand ta7t
+    QGraphicsLineItem* line4;//el bta3a el maska el 7abl
+    QGraphicsLineItem* line5;//el 7abl
+
 
     /*
     QGraphicsEllipseItem* head;
