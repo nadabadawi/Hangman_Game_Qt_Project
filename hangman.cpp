@@ -10,7 +10,7 @@ Hangman::Hangman(QWidget *parent)
     ui->graphicsView->setScene(scene);
 
 // draw stand for hangman to be initialized since opening game
-    QPen Blackpen(Qt::white);
+    QPen Blackpen(Qt::black);
     Blackpen.setWidth(5);
     line = scene->addLine(-100,5,-100,150,Blackpen);//line el ta7t
     line2 = scene->addLine(-100,175,-100,325,Blackpen);//line el fo2
@@ -29,30 +29,37 @@ Hangman::~Hangman()
 
 void Hangman::wrong_Button_clicked()
 {
+    QPen Redpen(Qt::red);
+    Redpen.setWidth(5);
     numMistakes++;
     if (numMistakes == 1)
     {
-
+        QBrush WhiteBrush(Qt::white);
+        ellipse=scene->addEllipse(-55,25,70,70,Redpen,WhiteBrush);
     }
     else if (numMistakes == 2)
     {
-
+        body=scene->addLine(-20,95,-20,250,Redpen);
     }
     else if (numMistakes == 3)
     {
-
+        right_arm=scene->addLine(-20,135,-75,90,Redpen);
     }
     else if (numMistakes == 4)
     {
-
+        left_arm=scene->addLine(-20,135,35,90,Redpen);
     }
     else if (numMistakes == 5)
     {
-
+        right_leg=scene->addLine(-20,200,-75,250,Redpen);
     }
     else if (numMistakes == 6)
     {
-        game_over();
+        left_leg=scene->addLine(-20,200,35,250,Redpen);
+    }
+    else if (numMistakes==7)
+    {
+      game_over();
     }
 }
 

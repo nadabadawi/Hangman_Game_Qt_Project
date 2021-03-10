@@ -97,6 +97,8 @@ private:
     QGraphicsLineItem* line3;//stand ta7t
     QGraphicsLineItem* line4;//el bta3a el maska el 7abl
     QGraphicsLineItem* line5;//el 7abl
+    QGraphicsEllipseItem* ellipse;
+    QGraphicsLineItem* body, *right_arm,*left_arm,*right_leg,*left_leg;
 
 
     /*
