@@ -8,6 +8,10 @@ Hangman::Hangman(QWidget *parent)
     ui->setupUi(this);
     scene = new QGraphicsScene(this);
     ui->graphicsView->setScene(scene);
+    ui->gameover->setVisible(false);
+    ui->victory->setVisible(false);
+
+
 
 // draw stand for hangman to be initialized since opening game
     QPen Blackpen(Qt::black);
@@ -56,11 +60,9 @@ void Hangman::wrong_Button_clicked()
     else if (numMistakes == 6)
     {
         left_leg=scene->addLine(-20,200,35,250,Redpen);
+        game_over();
     }
-    else if (numMistakes==7)
-    {
-      game_over();
-    }
+    
 }
 
 void Hangman::right_Button_clicked()
@@ -72,15 +74,12 @@ void Hangman::right_Button_clicked()
 
 void Hangman::game_over()
 {
-    /*
-    QPainter mytext(this);
-    mytext.setFont(QFont("Times New Roman", 48, QFont::Bold));
-    mytext.drawText(20, 30, "GAME OVER");
-    */
+    ui->gameover->setVisible(true);
 }
 
 void Hangman::victory()
 {
+    ui->victory->setVisible(true);
 
 }
 
