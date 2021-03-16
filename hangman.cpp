@@ -88,69 +88,94 @@ void Hangman::on_A_clicked()
     ui->A1AnswerBox->setText("A");
     ui->A2AnswerBox->setText("A");
     right_Button_clicked();
+    ui->A->setVisible(false);
 }
 
 void Hangman::on_B_clicked()
 {
     wrong_Button_clicked();
+    ui->B->setVisible(false);
 }
 
 void Hangman::on_C_clicked()
 {
     wrong_Button_clicked();
+    ui->C->setVisible(false);
+
 }
 
 void Hangman::on_D_clicked()
 {
     wrong_Button_clicked();
+    ui->D->setVisible(false);
+
 }
 
 void Hangman::on_E_clicked()
 {
     wrong_Button_clicked();
+    ui->E->setVisible(false);
+
 }
 
 void Hangman::on_F_clicked()
 {
     wrong_Button_clicked();
+    ui->F->setVisible(false);
+
 }
 
 void Hangman::on_G_clicked()
 {
     ui->GAnswerBox->setText("G");
     right_Button_clicked();
+    ui->G->setVisible(false);
+
 }
 
 void Hangman::on_H_clicked()
 {
     ui->HAnswerBox->setText("H");
     right_Button_clicked();
+    ui->H->setVisible(false);
+
 }
 
 void Hangman::on_I_clicked()
 {
     wrong_Button_clicked();
+    ui->I->setVisible(false);
+
+
 }
 
 void Hangman::on_J_clicked()
 {
     wrong_Button_clicked();
+    ui->J->setVisible(false);
+
 }
 
 void Hangman::on_K_clicked()
 {
     wrong_Button_clicked();
+    ui->K->setVisible(false);
+
 }
 
 void Hangman::on_L_clicked()
 {
     wrong_Button_clicked();
+    ui->L->setVisible(false);
+
 }
 
 void Hangman::on_M_clicked()
 {
     ui->MAnswerBox->setText("M");
     right_Button_clicked();
+    ui->M->setVisible(false);
+
 }
 
 void Hangman::on_N_clicked()
@@ -158,64 +183,90 @@ void Hangman::on_N_clicked()
     ui->N1AnswerBox->setText("N");
     ui->N2AnswerBox->setText("N");
     right_Button_clicked();
+    ui->N->setVisible(false);
+
 }
 
 void Hangman::on_O_clicked()
 {
     wrong_Button_clicked();
+    ui->O->setVisible(false);
+
 }
 
 void Hangman::on_P_clicked()
 {
     wrong_Button_clicked();
+    ui->P->setVisible(false);
+
 }
 
 void Hangman::on_Q_clicked()
 {
     wrong_Button_clicked();
+    ui->Q->setVisible(false);
+
 }
 
 void Hangman::on_R_clicked()
 {
     wrong_Button_clicked();
+    ui->R->setVisible(false);
+
 }
 
 void Hangman::on_S_clicked()
 {
     wrong_Button_clicked();
+    ui->S->setVisible(false);
+
 }
 
 void Hangman::on_T_clicked()
 {
     wrong_Button_clicked();
+    ui->T->setVisible(false);
+
 }
 
 void Hangman::on_U_clicked()
 {
     wrong_Button_clicked();
+    ui->U->setVisible(false);
+
 }
 
 void Hangman::on_V_clicked()
 {
     wrong_Button_clicked();
+    ui->V->setVisible(false);
+
 }
 
 void Hangman::on_W_clicked()
 {
     wrong_Button_clicked();
+    ui->W->setVisible(false);
+
 }
 
 void Hangman::on_X_clicked()
 {
     wrong_Button_clicked();
+    ui->X->setVisible(false);
+
 }
 
 void Hangman::on_Y_clicked()
 {
     wrong_Button_clicked();
+    ui->Y->setVisible(false);
+
 }
 
 void Hangman::on_Z_clicked()
 {
     wrong_Button_clicked();
+    ui->Z->setVisible(false);
+
 }
